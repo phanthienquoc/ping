@@ -1,0 +1,54 @@
+{
+  "cli": {
+    "version": ">= 10.0.0"
+  },
+  "build": {
+    "dev": {
+      "developmentClient": true,
+      "distribution": "store",
+      "channel": "dev",
+      "env": {
+        "APP_ENV": "dev"
+      },
+      "ios": {
+        "simulator": false
+      },
+      "android": {
+        "buildType": "apk"
+      }
+    },
+    "stag": {
+      "distribution": "store",
+      "channel": "stag",
+      "env": {
+        "APP_ENV": "stag"
+      },
+      "android": {
+        "buildType": "apk"
+      }
+    },
+    "prod": {
+      "distribution": "store",
+      "channel": "prod",
+      "autoIncrement": true,
+      "env": {
+        "APP_ENV": "prod"
+      },
+      "android": {
+        "buildType": "app-bundle"
+      }
+    }
+  },
+  "submit": {
+    "dev": {
+      "ios": {}
+    },
+    "stag": {
+      "ios": {}
+    },
+    "prod": {
+      "ios": {},
+      "android": {}
+    }
+  }
+}

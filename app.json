@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "ping",
+    "name": "Ping",
     "slug": "ping",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -13,9 +13,11 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.company.ping"
     },
     "android": {
+      "package": "com.company.ping",
       "adaptiveIcon": {
         "backgroundColor": "#E6F4FE",
         "foregroundImage": "./assets/images/android-icon-foreground.png",
@@ -34,6 +36,13 @@
     ],
     "experiments": {
       "typedRoutes": true
-    }
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "62e937e6-f027-4f7b-a4bf-a6308d4d4b3f"
+      }
+    },
+    "owner": "alexanderloveiris"
   }
 }
